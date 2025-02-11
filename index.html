@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <script src="Build/webar.loader.js"></script>
+    <script src="Build/WebARTest.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -73,9 +73,9 @@
                 document.getElementById("startWebcamDiv").style.display = "none";
 
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/webar.data",
-                    frameworkUrl: "Build/webar.framework.js",
-                    codeUrl: "Build/webar.wasm",
+                    dataUrl: "Build/WebARTest.data",
+                    frameworkUrl: "Build/WebARTest.framework.js",
+                    codeUrl: "Build/WebARTest.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "WebARTest2",
