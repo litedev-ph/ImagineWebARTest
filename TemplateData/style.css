@@ -10,18 +10,22 @@ body { padding: 0; margin: 0 }
     width: 225px;
     height: 18px;
     background: url('progress-bar-empty-light.png') no-repeat center;
-    position: relative; /* Added to contain the full bar */
-    margin-top: 10px;
+    position: relative;
+    margin: 0 auto;
 }
 
 #unity-progress-bar-full {
-    width: 0%;
+    position: absolute;
     height: 18px;
     background: url('progress-bar-full-light.png') no-repeat center;
-    position: absolute; /* Position it within empty bar */
-    left: 0;
+    width: 0%;
     top: 0;
-    margin-top: 10px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    /* Match the exact padding of your border image */
+    margin-left: 3px;  /* Adjust this value based on your border thickness */
+    width: calc(100% - 6px);  /* Adjust based on left + right border thickness */
 }
 #unity-footer { position: relative }
 .unity-mobile #unity-footer { display: none }
