@@ -15,13 +15,14 @@ body { padding: 0; margin: 0 }
 #unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 #poweredby { 
-    position: absolute;
-    left: 50%;
+    position: fixed;
     bottom: 0;
-    transform: translateX(-50%);
+    left: 0;
+    width: 100%;
     display: flex;
     gap: 5px;
     align-items: center;
+    justify-content: center;
 }
 #litedev-logo {
     width: 40px;
