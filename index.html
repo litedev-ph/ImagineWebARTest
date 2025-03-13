@@ -107,12 +107,11 @@
                 document.getElementById("startARButton").style.display = "block";
 
                 window.permissionsGranted = IsCameraPermissionGranted();
-
+                StartAR();
             }
 
             initialize();
-            StartAR();
-            
+
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
             var loadingBar = document.querySelector("#unity-loading-bar");
