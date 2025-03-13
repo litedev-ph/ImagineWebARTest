@@ -300,6 +300,12 @@
                 INTERNAL_SMOOTHFACTOR_POS: .075,
             }
             
+            document.addEventListener("visibilitychange", function() {
+                if (!document.hidden) {
+                console.log("Refreshing the page...");
+                location.reload(); // Refresh the page
+                }
+            });
     </script>
 </body>
 </html>
